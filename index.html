@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кольцо — мониторинг без ложных тревог</title>
+<meta name="description" content="Кольцо следит за серверами, базами и очередями. Находит причину сбоя за 40 секунд и присылает одну тревогу вместо сорока. 14 дней бесплатно, карта не нужна.">
+<meta property="og:title" content="Кольцо — мониторинг без ложных тревог">
+<meta property="og:description" content="Причина сбоя за 40 секунд. Одна тревога вместо сорока.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<header class="nav-wrap">
+<nav class="nav" id="nav" aria-label="Основная навигация">
+<a class="brand" href="#top">
+<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.25" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="10" r="2.5" fill="currentColor"/></svg>
+<span>Кольцо</span>
+</a>
+<button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Открыть меню"><span class="bar"></span><span class="bar"></span></button>
+<div class="nav-menu" id="navMenu">
+<a href="#how">Как работает</a>
+<a href="#features">Возможности</a>
+<a href="#price">Тарифы</a>
+<a href="#faq">Вопросы</a>
+<a class="btn btn-sm nav-cta" href="#cta">Начать бесплатно</a>
+</div>
+</nav>
+</header>
+<main id="main">
+<section class="hero" id="top">
+<div class="hero-copy">
+<h1 class="hero-title">Сбой найден раньше, чем о нём написал клиент</h1>
+<p class="hero-sub">Кольцо следит за серверами, базами и очередями. Находит причину за 40 секунд и присылает одну тревогу вместо сорока.</p>
+<div class="hero-actions"><a class="btn" href="#cta">Начать бесплатно</a><a class="btn btn-ghost" href="#how">Как это работает</a></div>
+<p class="hero-proof">14 дней без карты. Отмена в один клик.</p>
+</div>
+<div class="hero-art" aria-hidden="true">
+<div class="ring" data-ring><div class="ring-core"></div><div class="ring-dot d1"></div><div class="ring-dot d2"></div><div class="ring-dot d3"></div></div>
+<div class="hero-stat"><span class="stat-num">40 с</span><span class="stat-lbl">до причины сбоя</span></div>
+</div>
+</section>
+<section class="proof-strip" aria-label="Кому доверяют"><p class="strip-lbl">Следят за инфраструктурой в</p><ul class="strip-list"><li>Северный Порт</li><li>Тензор Логистик</li><li>Клиника Радуга</li><li>Восход Ритейл</li></ul></section>
+<section class="tagline" id="tagline"><p class="tagline-text" data-split>Тишина в чате дежурного стоит дороже любой панели мониторинга</p></section>
+<section class="problem" id="problem">
+<h2 class="sec-title">Почему обычный мониторинг не спасает</h2>
+<div class="two-col">
+<div class="col bad"><h3>Как было</h3><ul class="list"><li>Сорок уведомлений об одном и том же отказе в разных чатах</li><li>Дежурный тратит 25 минут на сбор картины по логам</li><li>Графики показывают симптом, причину искать руками</li></ul></div>
+<div class="col good"><h3>Как стало</h3><ul class="list"><li>Одна история сбоя со всеми связями между сервисами</li><li>Причина подсвечена на второй минуте, а не в конце смены</li><li>Уведомление приходит только когда порог действительно пройден</li></ul></div>
+</div></section>
+<section class="features" id="features">
+<h2 class="sec-title">Что Кольцо делает иначе</h2>
+<div class="grid">
+<article class="card fade"><svg class="ico" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3.2 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><h3>Причина, а не симптом</h3><p>Кольцо строит цепочку: задержка в базе, затем таймауты в очереди, затем отказ во фронте. Видно, где началось.</p></article>
+<article class="card fade"><svg class="ico" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><h3>Одна тревога вместо сорока</h3><p>События одного инцидента склеиваются в историю. Открывается один чат вместо сорока вкладок.</p></article>
+<article class="card fade"><svg class="ico" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18V9m5 9V5m5 13v-6m5 6V8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><h3>Пороги, которые вы задали</h3><p>Никаких отчётов о здоровье. Уведомление уходит только при выходе метрики за границу, установленную вами.</p></article>
+<article class="card fade"><svg class="ico" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 4v5c0 4.2-2.9 7.8-7 9-4.1-1.2-7-4.8-7-9V7l7-4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Журнал для разбора</h3><p>Каждая тревога хранит снимок метрик, деплоев и конфигурации на момент сбоя. Разбор не начинается с нуля.</p></article>
+</div></section>
+<section class="how" id="how">
+<h2 class="sec-title">Три шага до первой тревоги</h2>
+<ol class="steps">
+<li class="step fade"><span class="step-num">01</span><h3>Подключите агент</h3><p>Одна команда ставит сборщик на сервер. Он занимает 14 МБ памяти и не требует открытых портов наружу.</p></li>
+<li class="step fade"><span class="step-num">02</span><h3>Задайте пороги</h3><p>Кольцо сутки наблюдает за обычным поведением и предлагает границы. Любую можно поправить вручную.</p></li>
+<li class="step fade"><span class="step-num">03</span><h3>Получите тревогу с причиной</h3><p>Когда порог пройден, в Telegram приходит сообщение со ссылкой на цепочку событий и виновный сервис.</p></li>
+</ol></section>
+<section class="metrics" aria-label="Результаты">
+<div class="metric"><span class="m-num">40 с</span><span class="m-lbl">медиана до определения причины</span></div>
+<div class="metric"><span class="m-num">6,8×</span><span class="m-lbl">меньше тревог за смену</span></div>
+<div class="metric"><span class="m-num">99,94%</span><span class="m-lbl">точность порогов за квартал</span></div>
+</section>
+<section class="quotes" id="quotes">
+<h2 class="sec-title">Что говорят дежурные</h2>
+<div class="quote-grid">
+<figure class="quote fade"><blockquote>Раньше я собирал картину сбоя по четырём системам. Сейчас открываю одну ссылку и вижу, что виновата реплика базы, которая отстала на 400 секунд.</blockquote><figcaption>Артём Власов, ведущий SRE, Тензор Логистик</figcaption></figure>
+<figure class="quote fade"><blockquote>Мы выключили старый мониторинг через месяц. Единственное, о чём жалеем, что не сделали этого раньше.</blockquote><figcaption>Дина Ковалёва, технический директор, Клиника Радуга</figcaption></figure>
+</div></section>
+<section class="price" id="price">
+<h2 class="sec-title">Тарифы без звонка в отдел продаж</h2>
+<div class="plans">
+<article class="plan fade"><h3>Старт</h3><p class="plan-price">0 ₽<span>/месяц</span></p><p class="plan-note">До 3 серверов и 1 дежурный</p><ul class="list"><li>Метрики и пороги</li><li>Уведомления в Telegram</li><li>История сбоев 7 дней</li></ul><a class="btn btn-ghost plan-btn" href="#cta">Начать</a></article>
+<article class="plan plan-hot fade"><h3>Команда</h3><p class="plan-price">4 900 ₽<span>/месяц</span></p><p class="plan-note">До 40 серверов, до 10 дежурных</p><ul class="list"><li>Всё из «Старта»</li><li>Цепочки причин между сервисами</li><li>История сбоев 365 дней</li><li>Разбор инцидента с журналом</li></ul><a class="btn plan-btn" href="#cta">Попробовать 14 дней</a></article>
+<article class="plan fade"><h3>Своё железо</h3><p class="plan-price">29 000 ₽<span>/месяц</span></p><p class="plan-note">Без ограничения на число серверов</p><ul class="list"><li>Развёртывание в вашем контуре</li><li>SSO и роли</li><li>Дежурный инженер по SLA</li></ul><a class="btn btn-ghost plan-btn" href="#cta">Обсудить</a></article>
+</div></section>
+<section class="faq" id="faq">
+<h2 class="sec-title">Вопросы, которые задают чаще всего</h2>
+<div class="faq-list">
+<details class="fade"><summary>Что будет после 14 дней?</summary><p>Ничего не спишется без вашего подтверждения. Аккаунт переходит на бесплатный тариф «Старт» с тремя серверами.</p></details>
+<details class="fade"><summary>Куда уходят данные из инфраструктуры?</summary><p>Метрики хранятся на серверах в Москве. Содержимое запросов и персональные данные не собираются вовсе.</p></details>
+<details class="fade"><summary>Нужен ли открытый порт на сервере?</summary><p>Нет. Агент устанавливает исходящее соединение сам, входящие порты остаются закрытыми.</p></details>
+<details class="fade"><summary>Сколько времени занимает установка?</summary><p>Обычно 6 минут на три сервера. Команда установки копируется из панели.</p></details>
+<details class="fade"><summary>Можно ли подключить Kubernetes?</summary><p>Да, есть отдельный модуль для кластера: он ставится одной командой helm и видит поды, узлы и лимиты.</p></details>
+<details class="fade"><summary>Есть ли доступ по API?</summary><p>Есть. Все действия панели доступны через REST, ключ выдаётся в настройках проекта.</p></details>
+</div></section>
+<section class="cta" id="cta">
+<h2 class="cta-title">Проверьте на своих серверах</h2>
+<p class="cta-sub">Регистрация занимает две минуты. Первая тревога с причиной обычно приходит в тот же день.</p>
+<form class="form" id="signupForm" novalidate><label class="sr" for="email">Рабочая почта</label><input class="input" id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@company.ru" required><button class="btn" type="submit">Начать бесплатно</button></form>
+<p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+<p class="cta-note">Карта не нужна. Отмена в один клик.</p>
+</section>
+</main>
+<footer class="footer"><div class="footer-in">
+<div class="foot-brand"><span class="brand-txt">Кольцо</span><p>Мониторинг инфраструктуры для команд, которые устали от ложных тревог.</p></div>
+<div class="foot-col"><h4>Продукт</h4><a href="#features">Возможности</a><a href="#price">Тарифы</a><a href="#faq">Вопросы</a></div>
+<div class="foot-col"><h4>Документы</h4><a href="privacy.html">Политика конфиденциальности</a><a href="terms.html">Условия использования</a></div>
+</div><p class="copy">© 2026 Кольцо. Все права защищены.</p></footer>
+<script src="script.js" defer></script>
+</body>
+</html>
